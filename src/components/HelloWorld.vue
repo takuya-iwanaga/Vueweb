@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
 
-    <h1>{{ msg }}</h1>
-    <h1><img alt="ganchan" src="@/./assets/ganchan.png" height="70" width="70"></h1>
     <b>ど～も～、ganchanです。ここではやってきたことやすきなことなどをあげていきます。</b>
     <b>主にIT系になりますが気軽にみていってください。詳しい自己紹介は下のリンクをおしてくださ～い！</b>
     <h3>自己紹介</h3>

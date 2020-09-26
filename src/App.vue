@@ -1,16 +1,22 @@
 <template>
   <div id="app">
-    <HelloWorld msg="ganchanの部屋 "/>
+    <app-header></app-header>
+    <HelloWorld/>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import header from './components/Header.vue'
+import footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    'app-header': header,
+    HelloWorld,
+    'app-footer': footer,
   }
 }
 </script>
