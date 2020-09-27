@@ -5,6 +5,13 @@
     <b>主にIT系になりますが気軽にみていってください。詳しい自己紹介は下のリンクをおしてくださ～い！</b>
     <h3>自己紹介</h3>
     <a href="https://vuejs.org">自己紹介</a>
+
+<div id="example-1">
+  <button @click="click">Add 1</button>
+  <button @click="onclick">sub 1</button>
+    <p>The button above has been clicked {{ counter }}times.</p>
+</div>
+
     <h3>やったこと一覧</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank" rel="noopener">機械学習</a></li>
@@ -23,13 +30,28 @@
     </ul>
   </div>
 </template>
-
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script>
+
 export default {
   name: 'HelloWorld',
   props: {
     msg: String
+  },
+  data(){
+    return{
+      counter: 0
+    }
+  },
+  methods: {
+    click(){
+      this.counter++;
+    },
+    onclick(){
+      this.counter--;
+    }
   }
+
 }
 </script>
 
